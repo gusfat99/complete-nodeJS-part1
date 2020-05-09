@@ -1,0 +1,40 @@
+.form-control {
+    margin: 1rem 0;
+    width:  20rem;
+    max-width: 90%;
+    display: flex;
+}
+.form-control .input-control,
+.form-control textarea {
+   border: 1px solid #e30570;    
+  
+   border-radius: 2px;
+   padding-left: 5px;
+   font: inherit;
+}
+.form-control  label,
+.form-control  input
+.form-control textarea {
+   display: block;
+   width: 100%;
+   margin-bottom: 0.25rem;
+}
+.form-control button {
+   cursor: pointer;
+   width: 5.2rem;
+   height: 2rem;
+   background-color: #e30570;
+   font: inherit;
+   border-radius: 8px;
+   border: 1px solid #ffffff;
+   color : white;
+}
+
+
+.form-control button:hover {
+   background-color: #f89bd1;
+}
+.form-control input:focus,
+.form-control textarea:focus {
+  outline-color: #00695c;
+}

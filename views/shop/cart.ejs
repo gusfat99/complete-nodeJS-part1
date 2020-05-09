@@ -1,0 +1,27 @@
+<%- include("../templates/head.ejs") %> 
+<%- include("../templates/navigation.ejs") %>
+
+    <main>
+        <ul class="cart__item-list">
+            <% if (cartProducts.length <= 0) { %>
+                <h3>No Item Cart</h3> 
+                <% } else {%> 
+                    <% for( cartProduct of cartProducts ) { %>
+                        <li class="cart-item">
+                        <h1><%= cartProduct.title %> </h1>
+                        <h2>Quantity : <%= cartProduct.cartItems.qty %></h2>
+                        <a href="/delete-cart/<%= cartProduct.id %>" class="btn">Delete</a>
+                    </li>
+                <% } %>
+            <% } %> 
+        </ul>
+        <br>
+        <hr>
+        <div align="center">
+            <form action="create-order" method="POST">
+                <button class="btn" type="submit">Order Now</button>
+            </form>
+        </div>
+    </main>
+
+<%- include("../templates/footer.ejs"); %> 

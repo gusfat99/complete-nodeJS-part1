@@ -1,0 +1,21 @@
+{
+  "name": "shop-online",
+  "version": "1.0.0",
+  "description": "Shop Online Complete Guides NodeJS",
+  "main": "index.js",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.2",
+    "sequelize": "^5.21.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Bagus Fatwan Alfiat",
+  "license": "ISC"
+}

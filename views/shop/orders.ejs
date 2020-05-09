@@ -1,0 +1,21 @@
+<%- include("../templates/head.ejs") %> 
+<%- include("../templates/navigation.ejs") %> 
+<main>
+    <% if (orders.length > 0) { %>
+        <ul>
+            <% orders.forEach(order => { %>
+                <li>
+                    <h2>Order ID : <%= order.id %></h2>  
+                    <ul>
+                        <% order.products.forEach(product => { %> 
+                            <li><%= product.title %> (<%= product.orderItem.qty %> ) </li>
+                        <% }); %> 
+                    </ul>
+                </li>
+            <% }); %> 
+        </ul>
+    <% } else { %>
+        <h1>Nothing Orders</h1>
+    <% } %>
+</main>
+<%- include("../templates/footer.ejs"); %> 

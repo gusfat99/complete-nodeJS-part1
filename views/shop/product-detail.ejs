@@ -1,0 +1,13 @@
+<%- include("../templates/head.ejs") %> 
+<%- include("../templates/navigation.ejs") %>
+<main class="centered">
+    <h1><%= product.title %> </h1>
+    <hr>
+    <div class="imgContainer">
+        <img src="<%= product.imageUrl %> ">
+    </div>
+    <h2><%= product.price; %> </h2>
+    <p><%= product.description; %> </p>
+    <%- include("../templates/add-to-cart.ejs", {product : product}) %> 
+</main>
+<%- include("../templates/footer.ejs"); %> 
